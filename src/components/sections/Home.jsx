@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import TypeWriterText from "./TypeWriterText";
 
 const Section = styled.section`
   min-height: ${(props) => `calc(100vh - ${props.theme.navHeight})`};
@@ -33,10 +34,13 @@ const Home = () => {
     <Section>
       <Container>
         <Box>
-          <h1>text</h1>
+          {/* <h1>text</h1>
+           */}
+          <TypeWriterText />
         </Box>
         <Box>
-          <h1>Video</h1>
+          {/* <h1>Video</h1> */}
+          <img src="../assets/Home GIF.gif" alt="#" />
         </Box>
       </Container>
     </Section>
