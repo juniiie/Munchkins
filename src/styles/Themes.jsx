@@ -14,7 +14,7 @@ export const light = {
   fontlg: "1.25em",
   fontxl: "2em",
   fontxxl: "3em",
-  fontxxx: "4em",
+  fontxxxl: "4em",
 
   fontButton: "0.875em",
   navHeight: "5rem",
@@ -34,7 +34,7 @@ export const dark = {
   fontlg: "1.25em",
   fontxl: "2em",
   fontxxl: "3em",
-  fontxxx: "4em",
+  fontxxxl: "4em",
 
   fontButton: "0.875em",
   navHeight: "5rem",
