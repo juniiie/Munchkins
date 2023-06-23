@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Vector from "../Icons/Vector";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
