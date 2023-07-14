@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   cursor: pointer;
@@ -19,17 +20,36 @@ const Title = styled.div`
 const Reveal = styled.div`
   display: ${(props) => (props.clicked ? "block" : "none")};
   margin-top: 1rem;
-  color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.6)`};
+  /* color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.6)`}; */
+  color: grey;
   font-size: ${(props) => props.theme.fontsm};
   font-weight: 300;
   line-height: 1.1rem;
+`;
+
+const Name = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const Indicator = styled.span`
+  font-size: ${(props) => props.theme.fontxxl};
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Accordion = ({ title, children }) => {
   const [collapse, setCollapse] = useState(false);
   return (
     <Container>
-      <Title onClick={() => setCollapse(!collapse)}>{title}</Title>
+      <Title onClick={() => setCollapse(!collapse)}>
+        <Name>
+          <span>{title}</span>
+        </Name>
+        {collapse ? <Indicator>-</Indicator> : <Indicator>+</Indicator>}
+      </Title>
       <Reveal clicked={collapse}>{children}</Reveal>
     </Container>
   );
