@@ -13,9 +13,10 @@ const Section = styled.div`
   height: 25rem;
   position: relative;
   border-top: 2px solid ${(props) => props.theme.text};
-  /* border-top: 2px solid ${(props) => props.theme.text}; */
 
   /* background-color: ${(props) => `rgba(${props.theme.textRgba},0.9)`}; */
+  background-color: ${(props) => props.theme.text};
+  /* opacity: 0.9; */
 
   display: flex;
   justify-content: center;
@@ -27,8 +28,8 @@ const Section = styled.div`
 const ImgContainer = styled.div`
   width: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  /* left: 20%; */
   transform: translate() (-50%, -50%);
 
   display: flex;
@@ -80,7 +81,7 @@ const JoinNow = styled.button`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid ${(props) => props.theme.body};
+    border: 2px solid ${(props) => props.theme.text};
     width: 100%;
     height: 100%;
     border-radius: 50px;
