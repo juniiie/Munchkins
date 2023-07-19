@@ -133,7 +133,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Munchkins CLub. ALl rights reserved.
         </span>
         <span>
-          Made with &#10084; by
+          Made with &#10084; by&nbsp;
           <a href="Youtube" target="_blank" rel="noopener noreferrer">
             Jun
           </a>
